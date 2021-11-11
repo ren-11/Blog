@@ -1,0 +1,61 @@
+20:40:13.095 INFO  com.blog.BlogApplication [48] - Starting BlogApplication on 静召的计算机 with PID 17600 (D:\IDEA\blog\target\classes started by 静召 in D:\IDEA\blog)
+20:40:13.096 INFO  com.blog.BlogApplication [597] - The following profiles are active: dev
+20:40:13.422 INFO  o.h.validator.internal.util.Version [30] - HV000001: Hibernate Validator 5.3.5.Final
+20:40:13.435 INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext [583] - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@746ed1ab: startup date [Thu Nov 12 20:40:13 CST 2020]; root of context hierarchy
+20:40:15.573 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer [89] - Tomcat initialized with port(s): 8080 (http)
+20:40:15.583 INFO  o.a.catalina.core.StandardService [179] - Starting service [Tomcat]
+20:40:15.584 INFO  o.a.catalina.core.StandardEngine [179] - Starting Servlet Engine: Apache Tomcat/8.5.20
+20:40:15.747 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [179] - Initializing Spring embedded WebApplicationContext
+20:40:15.747 INFO  o.s.web.context.ContextLoader [276] - Root WebApplicationContext: initialization completed in 2312 ms
+20:40:16.118 INFO  o.s.b.w.s.ServletRegistrationBean [190] - Mapping servlet: 'dispatcherServlet' to [/]
+20:40:16.121 INFO  o.s.b.w.s.FilterRegistrationBean [258] - Mapping filter: 'characterEncodingFilter' to: [/*]
+20:40:16.121 INFO  o.s.b.w.s.FilterRegistrationBean [258] - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+20:40:16.121 INFO  o.s.b.w.s.FilterRegistrationBean [258] - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+20:40:16.121 INFO  o.s.b.w.s.FilterRegistrationBean [258] - Mapping filter: 'requestContextFilter' to: [/*]
+20:40:17.125 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [349] - Building JPA container EntityManagerFactory for persistence unit 'default'
+20:40:17.141 INFO  o.h.jpa.internal.util.LogHelper [31] - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+20:40:17.448 INFO  org.hibernate.Version [37] - HHH000412: Hibernate Core {5.0.12.Final}
+20:40:17.449 INFO  org.hibernate.cfg.Environment [213] - HHH000206: hibernate.properties not found
+20:40:17.450 INFO  org.hibernate.cfg.Environment [317] - HHH000021: Bytecode provider name : javassist
+20:40:17.491 INFO  o.h.annotations.common.Version [66] - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+20:40:18.023 INFO  org.hibernate.dialect.Dialect [156] - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:40:18.470 INFO  o.h.tool.hbm2ddl.SchemaUpdate [105] - HHH000228: Running hbm2ddl schema update
+20:40:19.136 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean [379] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+20:40:20.500 INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter [534] - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@746ed1ab: startup date [Thu Nov 12 20:40:13 CST 2020]; root of context hierarchy
+20:40:20.569 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.blog.web.admin.BlogController.blogs()
+20:40:20.573 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.blog.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+20:40:20.573 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.blog.web.admin.LoginController.loginPage()
+20:40:20.574 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.blog.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.576 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.576 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TagController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+20:40:20.577 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TagController.input(org.springframework.ui.Model)
+20:40:20.577 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.blog.web.admin.TagController.post(com.blog.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.577 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.blog.web.admin.TagController.editPost(com.blog.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.578 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+20:40:20.580 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.580 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+20:40:20.580 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TypeController.input(org.springframework.ui.Model)
+20:40:20.581 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.blog.web.admin.TypeController.post(com.blog.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.581 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.blog.web.admin.TypeController.editPost(com.blog.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+20:40:20.582 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.blog.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+20:40:20.582 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/],methods=[GET]}" onto public java.lang.String com.blog.web.IndexController.index()
+20:40:20.583 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/blog],methods=[GET]}" onto public java.lang.String com.blog.web.IndexController.blog()
+20:40:20.584 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+20:40:20.585 INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping [543] - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+20:40:20.626 INFO  o.s.w.s.h.SimpleUrlHandlerMapping [362] - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:40:20.626 INFO  o.s.w.s.h.SimpleUrlHandlerMapping [362] - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:40:20.644 INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver [273] - Detected @ExceptionHandler methods in controllerExceptionHandler
+20:40:20.666 INFO  o.s.w.s.h.SimpleUrlHandlerMapping [362] - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+20:40:21.307 INFO  o.s.b.d.a.OptionalLiveReloadServer [58] - LiveReload server is running on port 35729
+20:40:21.348 INFO  o.s.j.e.a.AnnotationMBeanExporter [431] - Registering beans for JMX exposure on startup
+20:40:21.365 INFO  o.a.coyote.http11.Http11NioProtocol [179] - Initializing ProtocolHandler ["http-nio-8080"]
+20:40:21.373 INFO  o.a.coyote.http11.Http11NioProtocol [179] - Starting ProtocolHandler ["http-nio-8080"]
+20:40:21.384 INFO  o.a.tomcat.util.net.NioSelectorPool [179] - Using a shared selector for servlet write/read
+20:40:21.398 INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer [201] - Tomcat started on port(s): 8080 (http)
+20:40:21.403 INFO  com.blog.BlogApplication [57] - Started BlogApplication in 8.75 seconds (JVM running for 12.314)
+20:40:24.608 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] [179] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+20:40:24.608 INFO  o.s.web.servlet.DispatcherServlet [489] - FrameworkServlet 'dispatcherServlet': initialization started
+20:40:24.660 INFO  o.s.web.servlet.DispatcherServlet [508] - FrameworkServlet 'dispatcherServlet': initialization completed in 51 ms
+20:40:28.779 INFO  o.h.h.i.QueryTranslatorFactoryInitiator [47] - HHH000397: Using ASTQueryTranslatorFactory

@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    mode: HTML
+  profiles:
+    active: dev
+logging:
+  path: home/logs/
+  file: ${logging.path}springboot
+
+comment.avatar: /img/timg.jpg
